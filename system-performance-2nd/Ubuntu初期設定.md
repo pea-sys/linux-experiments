@@ -1,3 +1,4 @@
+```
 #リポジトリ更新
 sudo apt update
 #パッケージ更新
@@ -40,6 +41,9 @@ sudo apt install tiptop
 sudo apt install msr-tools
 sudo apt install fatrace -y
 sudo apt install fio -y
+sudo apt install iotop -y
+sudo apt install blktrace -y
+sudo apt install ioping -y
 #bccツール  各コマンド実行時にsuffixとして「-bpfcc」を付加 
 sudo apt-get install bpfcc-tools linux-headers-6.2.0-35-generic
 #FlameGraph
@@ -48,6 +52,6 @@ sudo git clone https://github.com/brendangregg/FlameGraph
 cd FlameGraph
 sudo wget https://raw.githubusercontent.com/brendangregg/FlameGraph/master/stackcollapse-perf.pl
 sudo wget https://raw.githubusercontent.com/brendangregg/FlameGraph/master/flamegraph.pl
-
+```
 
 
