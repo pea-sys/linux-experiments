@@ -44,6 +44,7 @@ sudo apt install fio -y
 sudo apt install iotop -y
 sudo apt install blktrace -y
 sudo apt install ioping -y
+sudo apt install net-tools
 #bccツール  各コマンド実行時にsuffixとして「-bpfcc」を付加 
 sudo apt-get install bpfcc-tools linux-headers-6.2.0-35-generic
 #FlameGraph
