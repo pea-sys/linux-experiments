@@ -25,6 +25,8 @@ LANG=C xdg-user-dirs-gtk-update
 #右クリックで空ファイルを作成可能にする
 touch Templates/空のドキュメント
 
+#vimをHuge版にする
+sudo apt-get install vim -y
 #好みのシェル導入
 sudo apt install fish -y
 chsh -s /usr/bin/fish
