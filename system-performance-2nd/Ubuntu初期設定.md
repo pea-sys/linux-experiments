@@ -1,3 +1,4 @@
+```
 #リポジトリ更新
 sudo apt update
 #パッケージ更新
@@ -24,6 +25,8 @@ LANG=C xdg-user-dirs-gtk-update
 #右クリックで空ファイルを作成可能にする
 touch Templates/空のドキュメント
 
+#vimをHuge版にする
+sudo apt-get install vim -y
 #好みのシェル導入
 sudo apt install fish -y
 chsh -s /usr/bin/fish
@@ -40,6 +43,10 @@ sudo apt install tiptop
 sudo apt install msr-tools
 sudo apt install fatrace -y
 sudo apt install fio -y
+sudo apt install iotop -y
+sudo apt install blktrace -y
+sudo apt install ioping -y
+sudo apt install net-tools
 #bccツール  各コマンド実行時にsuffixとして「-bpfcc」を付加 
 sudo apt-get install bpfcc-tools linux-headers-6.2.0-35-generic
 #FlameGraph
@@ -48,6 +55,6 @@ sudo git clone https://github.com/brendangregg/FlameGraph
 cd FlameGraph
 sudo wget https://raw.githubusercontent.com/brendangregg/FlameGraph/master/stackcollapse-perf.pl
 sudo wget https://raw.githubusercontent.com/brendangregg/FlameGraph/master/flamegraph.pl
-
+```
 
 
