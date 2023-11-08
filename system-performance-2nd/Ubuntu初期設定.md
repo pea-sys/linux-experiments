@@ -16,6 +16,10 @@ git config --global user.name "pea-sys"
 git config --global user.email pea98258@gmail.com
 #不要ソフト削除
 sudo apt purge libreoffice-common
+#curlインストール
+sudo apt install curl
+#sarを使う場合
+sudo systemctl enable sysstat && sudo systemctl start sysstat
 
 #Desktop用
 #ゴミ箱をデスクトップに配置
