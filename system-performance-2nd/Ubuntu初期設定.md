@@ -20,6 +20,14 @@ sudo apt purge libreoffice-common
 sudo apt install curl
 #sarを使う場合
 sudo systemctl enable sysstat && sudo systemctl start sysstat
+# https://github.com/iovisor/bpftrace/issues/2168
+echo "deb http://ddebs.ubuntu.com $(lsb_release -cs) main restricted universe multiverse
+deb http://ddebs.ubuntu.com $(lsb_release -cs)-updates main restricted universe multiverse
+deb http://ddebs.ubuntu.com $(lsb_release -cs)-proposed main restricted universe multiverse" | \
+sudo tee -a /etc/apt/sources.list.d/ddebs.list
+sudo apt install ubuntu-dbgsym-keyring
+sudo apt update
+sudo apt install bpftrace-dbgsym
 
 #Desktop用
 #ゴミ箱をデスクトップに配置
@@ -53,6 +61,7 @@ sudo apt install ioping -y
 sudo apt install net-tools
 #bccツール  各コマンド実行時にsuffixとして「-bpfcc」を付加 
 sudo apt-get install bpfcc-tools linux-headers-6.2.0-35-generic
+
 #FlameGraph
 cd /usr/local/src/
 sudo git clone https://github.com/brendangregg/FlameGraph
