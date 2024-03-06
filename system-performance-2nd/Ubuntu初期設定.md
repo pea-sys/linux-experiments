@@ -43,6 +43,8 @@ sudo apt-get install vim -y
 sudo apt install fish -y
 chsh -s /usr/bin/fish
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+#bashラッパー導入
+fisher install edc/bass
 
 #クライシスツール
 sudo apt install sysstat
