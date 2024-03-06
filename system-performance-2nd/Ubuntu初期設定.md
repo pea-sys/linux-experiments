@@ -42,6 +42,7 @@ sudo apt-get install vim -y
 #好みのシェル導入
 sudo apt install fish -y
 chsh -s /usr/bin/fish
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 
 #クライシスツール
 sudo apt install sysstat
