@@ -1,0 +1,11 @@
+$TTL	86400
+@	IN	SOA	ns.sub.dnsstudy.jp. root.sub.dnsstudy.jp. (
+			20240320	; Serial
+			10800		; Refresh
+			900		; Retry
+			1814400		; Expire
+			900 )		; Negative Cache TTL
+;
+	IN	NS	ns.sub.dnsstudy.jp.
+ns	IN	A	192.168.0.36
+www	IN	A	192.168.0.36
